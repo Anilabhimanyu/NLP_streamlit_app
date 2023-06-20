@@ -24,7 +24,7 @@ import warnings
 warnings.filterwarnings("ignore")
 np.random.seed(123)
 
-data=pd.read_csv("/home/user/Desktop/DatasetBank/labeledTrainData.tsv",sep='\t')
+data=pd.read_csv("labeledTrainData.tsv",sep='\t')
 
 print(data.head())
 print(data.shape)

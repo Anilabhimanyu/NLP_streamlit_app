@@ -65,7 +65,7 @@ def text_cleaning(text,remove_stop_words=True,lemmatize_words=True):
 def make_prediction(review):
     cleaned_review=text_cleaning(review)
     cleaned_review=[cleaned_review]
-    model=joblib.load("/home/user/Desktop/STREAMLIT_PROJECT/review_classification_model.pkl")
+    model=joblib.load("review_classification_model.pkl")
     print("1 executed")
     predicted_review=model.predict(cleaned_review)
     print("2 executed")
